@@ -220,7 +220,7 @@ nav a {
   font-size: 1.6rem;
   text-decoration: none;
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   nav a {
     align-self: center;
   }
@@ -237,7 +237,7 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -258,7 +258,7 @@ footer .footerNav {
   align-items: center;
   padding-left: 2%;
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   footer .footerNav {
     display: flex;
     flex-direction: column;
@@ -270,7 +270,8 @@ footer .footerNav {
     margin: none;
   }
   footer .footerNav a {
-    align-items: center;
+    text-align: center;
+    margin-bottom: 2%;
   }
 }
 footer a {
@@ -287,7 +288,6 @@ footer a {
   height: 30vh;
   width: 100%;
   background-image: url(/img/clipboard.jpg);
-  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -295,7 +295,7 @@ footer a {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .home .titleBar {
     display: none;
   }
@@ -308,25 +308,29 @@ footer a {
 .home h1 {
   font-size: 4vh;
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .home {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
   .home img {
-    align-self: center;
+    align-content: center;
   }
 }
 .home header {
   width: 100%;
   height: 50px;
   background-color: #45933E;
-  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home header {
+    display: inline-flex;
+    flex-direction: column;
+  }
 }
 .home header .headerNav {
   display: flex;
@@ -335,11 +339,9 @@ footer a {
   align-items: center;
   margin: 0 2%;
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .home header .headerNav {
-    height: 45px;
-    flex-direction: column;
-    padding-bottom: 10%;
+    justify-content: space-around;
   }
 }
 .home header .headerNav .navLinks {
@@ -348,6 +350,16 @@ footer a {
   flex-direction: row;
   justify-content: space-evenly;
   padding-left: 30%;
+}
+@media only screen and (max-width: 800px) {
+  .home header .headerNav .navLinks {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .home header .headerNav .navLinks {
+    display: none;
+  }
 }
 .home .content-section {
   display: flex;
@@ -358,11 +370,16 @@ footer a {
   align-content: center;
   padding-bottom: 2vh;
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
     align-items: center;
     padding: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home .content-section {
+    flex-wrap: nowrap;
   }
 }
 .home .content-section .text-content {
@@ -372,14 +389,10 @@ footer a {
   text-align: center;
   padding-top: 3%;
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
-  }
-}
-@media (max-width: 360px) {
-  .home .content-section .img-content {
-    width: 100%;
+    margin: none;
   }
 }
 .home .content-section .img-content img {
@@ -390,12 +403,17 @@ footer a {
   padding-bottom: 2vh;
   border-top: 1px dashed #857A7A;
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .home .inverse-content {
     flex-direction: column-reverse;
     width: 100%;
     align-items: center;
     justify-content: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home .inverse-content {
+    flex-wrap: nowrap;
   }
 }
 .home .content-pick {
@@ -406,7 +424,7 @@ footer a {
   align-items: center;
   border-top: 1px dashed #857A7A;
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
   }
@@ -431,7 +449,7 @@ footer a {
 .home .content-pick .destination .btn:hover {
   background-color: #0a1509;
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .home .content-pick .destination {
     align-self: center;
     align-items: center;
